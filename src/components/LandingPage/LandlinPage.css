@@ -1,0 +1,15 @@
+/* src/components/LandingPage/LandingPage.css */
+.landing-page-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #4CAF50;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+  

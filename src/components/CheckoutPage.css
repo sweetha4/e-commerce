@@ -1,0 +1,98 @@
+/* .checkout-page {
+    padding: 20px;
+  }
+  
+  .checkout-items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout-item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .checkout-item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+   */
+   .checkout-page {
+    padding: 20px;
+  }
+  
+  .checkout-items {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-item {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .checkout-item-details {
+    margin-left: 20px;
+  }
+  
+  .total-amount {
+    margin: 20px 0;
+  }
+  
+  .proceed-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .payment-form {
+    margin-top: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+  }
+  
+  .payment-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,42 @@
+.buy-phone-page, .buy-phone-details-page {
+    padding: 20px;
+  }
+  
+  .product-info, .product-details {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-info img, .product-details img {
+    /* max-width: 100%; */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .product-info h2, .product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .product-info .price, .product-details .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .filters-summary {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters-summary p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  
