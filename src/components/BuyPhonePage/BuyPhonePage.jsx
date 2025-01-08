@@ -131,7 +131,7 @@ const BuyPhonePage = () => {
         </div>
 
         <div>
-          <button onClick={handleAddToCart}>Add to cart</button>
+          <button onClick={handleAddToCart} className='buy'>Add to cart</button>
         </div>
       </div>
     </div>

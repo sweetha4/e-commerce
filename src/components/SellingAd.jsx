@@ -51,7 +51,7 @@ const SellingAd = () => {
 
   return (
     <div className="selling-ad">
-      <h2>Top Selling Products</h2>
+      <h2 className='sell'>Top Selling Products</h2>
       <Slider {...settings}>
         {topSellingProducts.map((product, index) => (
           <div key={index} className="product-slide">
@@ -65,7 +65,7 @@ const SellingAd = () => {
                 title: product.title, 
                 price: product.price 
               }}>
-              <button>Buy Now</button>
+              <button className='sellAd'>Buy Now</button>
             </Link>
           </div>
         ))}

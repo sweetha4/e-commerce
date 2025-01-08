@@ -96,8 +96,8 @@
   margin-bottom: 5px;
 }
 
-button {
-  background-color: #27ae60;
+.buy {
+  background-color: #4ae68b;
   color: #fff;
   font-size: 1rem;
   padding: 10px 20px;
@@ -105,8 +105,4 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #2ecc71;
 }

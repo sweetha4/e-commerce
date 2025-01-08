@@ -51,7 +51,7 @@ const SignUpPage = () => {
             required
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit" className='sign'>Sign Up</button>
       </form>
       <div className="login-link">
         <p>Already have an account?</p>

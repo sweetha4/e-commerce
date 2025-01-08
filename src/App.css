@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f4; */
-  background-color: rgb(218, 217, 218);
+  background-color: rgba(182, 212, 245, 0.807);
   width: 100%;
 }
 
@@ -51,7 +51,7 @@ margin-left: -580px;
 
 .search-button {
   padding: 10px 15px;
-  background-color: #007BFF;
+  background-color: #10045c;
   color: white;
   border: none;
   cursor: pointer;
@@ -102,7 +102,7 @@ margin-left: -580px;
   width: 90%;
   max-width: 990px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: rgb(176, 178, 180);
+  background-color: rgb(220, 220, 221);
 }
 
 .phone-ad-slide {
@@ -158,9 +158,12 @@ p {
   width: 80%;
   max-width: 1000px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: rgba(120, 108, 197, 0.267);
+  background-color: rgba(93, 96, 95, 0.837);
 }
-
+.sell{
+  color:#fff;
+  padding-bottom: 20px;
+}
 .product-slide {
   display: flex;
   flex-direction: column;
@@ -186,10 +189,6 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
 .slick-dots {
   bottom: -30px;
 }
@@ -201,7 +200,7 @@ button:hover {
   padding-top: 10px;
   margin:15px;
   text-align: center;
-  background-color: rgb(233, 236, 238);
+  background-color: rgb(198, 243, 248);
 }
 
 .categories h3 {
@@ -300,17 +299,15 @@ padding-right: 20px;
   padding: 20px;
 } */
 
-button {
+.sellAd {
   padding: 10px 15px;
-  background-color: #4CAF50;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(243,0,0,0.7428221288515406) 100%, rgba(0,212,255,1) 100%);
   color: white;
   border: none;
   border-radius: 5px;
 }
 
-button:hover {
-  background-color: #45a049;
-}
 /* Example: CartPage.css */
 .cart-page {
   padding: 20px;

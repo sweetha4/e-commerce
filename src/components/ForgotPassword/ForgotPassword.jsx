@@ -29,7 +29,7 @@ const ForgotPassword = () => {
             required
           />
         </div>
-        <button type="submit">Reset Password</button>
+        <button type="submit" className='forgot'>Reset Password</button>
       </form>
       <div className='log'>
         <Link to="/Login">Login Here</Link>

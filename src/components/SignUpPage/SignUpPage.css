@@ -6,7 +6,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color:rgb(232, 232, 228);
+    background-color:rgb(191, 223, 249);
   }
   
   h2 {
@@ -41,9 +41,10 @@
     outline: none;
   }
   
-  button {
+  .sign {
     padding: 12px;
-    background-color: #4CAF50;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(28,0,243,1) 13%, rgba(0,212,255,1) 100%);
     color: white;
     border: none;
     border-radius: 5px;
@@ -52,9 +53,6 @@
     transition: background-color 0.3s;
   }
   
-  button:hover {
-    background-color: #45a049;
-  }
   .login-link {
     margin-top: 20px;
     text-align: center;
