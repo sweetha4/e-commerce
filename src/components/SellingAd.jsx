@@ -13,14 +13,14 @@ import productImage8 from '../assets/images/product8.jpg';
 import { Link } from 'react-router-dom';
 
 const topSellingProducts = [
-  { id: 1, image: productImage1 },
-  { id: 2, image: productImage2 },
-  { id: 3, image: productImage3 },
-  { id: 4, image: productImage4 },
-  { id: 5, image: productImage5 },
-  { id: 6, image: productImage6 },
-  { id: 7, image: productImage7 },
-  { id: 8, image: productImage8 },
+  { id: 1, image: productImage1, price: 'Rs 15,000' },
+  { id: 2, image: productImage2, price: 'Rs 18,000' },
+  { id: 3, image: productImage3, price: 'Rs 22,000' },
+  { id: 4, image: productImage4, price: 'Rs 25,000' },
+  { id: 5, image: productImage5, price: 'Rs 30,000' },
+  { id: 6, image: productImage6, price: 'Rs 35,000' },
+  { id: 7, image: productImage7, price: 'Rs 40,000' },
+  { id: 8, image: productImage8, price: 'Rs 45,000' },
 ];
 
 const SellingAd = () => {
@@ -53,25 +53,23 @@ const SellingAd = () => {
     <div className="selling-ad">
       <h2 className='sell'>Top Selling Products</h2>
       <Slider {...settings}>
-        {topSellingProducts.map((product, index) => (
-          <div key={index} className="product-slide">
+        {topSellingProducts.map((product) => (
+          <div key={product.id} className="product-slide">
             <img src={product.image} alt={product.title} className="product-image" />
-            <h3>{product.title}</h3>
-            <p>{product.description}</p>
             <p className="price">{product.price}</p>
-            <Link to={`/buy-phone/${product.id}`}  
-                state={{ 
-                image: product.image, 
-                title: product.title, 
-                price: product.price 
-              }}>
-              <button className='sellAd'>Buy Now</button>
-            </Link>
+            <Link to={`/buy-now/${product.id}`}
+             state={{ 
+            image: product.image, 
+            price: product.price 
+             }}>
+             <button className='sellAd'>Buy Now</button>
+             </Link>
+          
           </div>
         ))}
       </Slider>
     </div>
   );
-};
+}; 
 
 export default SellingAd;

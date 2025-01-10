@@ -1,26 +1,79 @@
+// import React from 'react';
+
+// const CategoriesList = () => {
+//   const categories = [
+//     {
+//       name: 'Electronics',
+//       subcategories: ['Phone', 'Camera', 'Television', 'Laptops', 'Headphones']
+//     },
+//     {
+//       name: 'Clothing',
+//       subcategories: ['Jeans', 'Kurthi', 'Salwar', 'T-shirts', 'Jackets']
+//     },
+//     {
+//       name: 'Home Appliances',
+//       subcategories: ['Washing Machine', 'Refrigerator', 'Microwave', 'Vacuum Cleaner', 'Air Conditioner']
+//     },
+//     {
+//       name: 'Toys',
+//       subcategories: ['Action Figures', 'Puzzles', 'Board Games', 'Stuffed Animals', 'Building Blocks']
+//     },
+//     {
+//       name: 'Books',
+//       subcategories: ['Fiction', 'Non-fiction', 'Comics', 'Biographies', 'Self-help']
+//     }
+//   ];
+
+//   return (
+//     <div className="categories">
+//       <h3>Browse by Category</h3>
+//       <div className="categories-list">
+//         {categories.map((category, index) => (
+//           <div className="category" key={index}>
+//             <a href={`#${category.name.toLowerCase()}`} className="category-name">{category.name}</a>
+//             <div className="subcategory-list">
+//               {category.subcategories.map((subcategory, subIndex) => (
+//                 <a href={`#${subcategory.toLowerCase()}`} key={subIndex} className="subcategory">{subcategory}</a>
+//               ))}
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CategoriesList;
+
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CategoriesList = () => {
   const categories = [
     {
       name: 'Electronics',
-      subcategories: ['Phone', 'Camera', 'Television', 'Laptops', 'Headphones']
+      subcategories: ['Phone', 'Camera', 'Television', 'Laptops', 'Headphones'],
+      path: 'electronics',
     },
     {
       name: 'Clothing',
-      subcategories: ['Jeans', 'Kurthi', 'Salwar', 'T-shirts', 'Jackets']
+      subcategories: ['Jeans', 'Kurthi', 'Salwar', 'T-shirts', 'Jackets'],
+      path: 'clothing',
     },
     {
       name: 'Home Appliances',
-      subcategories: ['Washing Machine', 'Refrigerator', 'Microwave', 'Vacuum Cleaner', 'Air Conditioner']
+      subcategories: ['Washing Machine', 'Refrigerator', 'Microwave', 'Vacuum Cleaner', 'Air Conditioner'],
+      path: 'home_appliances',
     },
     {
       name: 'Toys',
-      subcategories: ['Action Figures', 'Puzzles', 'Board Games', 'Stuffed Animals', 'Building Blocks']
+      subcategories: ['Action Figures', 'Puzzles', 'Board Games', 'Stuffed Animals', 'Building Blocks'],
+      path: 'toys',
     },
     {
       name: 'Books',
-      subcategories: ['Fiction', 'Non-fiction', 'Comics', 'Biographies', 'Self-help']
+      subcategories: ['Fiction', 'Non-fiction', 'Comics', 'Biographies', 'Self-help'],
+      path: 'books',
     }
   ];
 
@@ -33,7 +86,13 @@ const CategoriesList = () => {
             <a href={`#${category.name.toLowerCase()}`} className="category-name">{category.name}</a>
             <div className="subcategory-list">
               {category.subcategories.map((subcategory, subIndex) => (
-                <a href={`#${subcategory.toLowerCase()}`} key={subIndex} className="subcategory">{subcategory}</a>
+                <Link
+                  to={`/buy-product/${category.path}/${subcategory.toLowerCase()}`} // Dynamic route based on category
+                  key={subIndex}
+                  className="subcategory"
+                >
+                  {subcategory}
+                </Link>
               ))}
             </div>
           </div>
@@ -44,4 +103,3 @@ const CategoriesList = () => {
 };
 
 export default CategoriesList;
-

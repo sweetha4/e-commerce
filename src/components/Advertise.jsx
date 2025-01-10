@@ -20,14 +20,14 @@ const phoneAds = [
     title: 'Samsung Galaxy Flip',
     description: 'Special offer, limited time!',
     price: 'Rs 98,899',
-    id: 2, 
+    id: 2,
   },
   {
     image: phoneImage3,
     title: 'Vivo yx200',
     description: 'Now with improved camera and battery!',
     price: 'Rs 20,999',
-    id: 3, 
+    id: 3,
   },
 ];
 
@@ -52,14 +52,16 @@ const Advertisement = () => {
             <h3>{ad.title}</h3>
             <p>{ad.description}</p>
             <p className="price">{ad.price}</p>
+            {/* Navigating to BuyNowPhonePage and passing the product details */}
             <Link to={`/buy-phone/${ad.id}`} 
                 state={{ 
-                image: ad.image, 
-                title: ad.title, 
-                description: ad.description, 
-                price: ad.price 
-              }}>
-            Buy Now</Link> 
+                  image: ad.image, 
+                  title: ad.title, 
+                  description: ad.description, 
+                  price: ad.price 
+                }}>
+              Buy Now
+            </Link> 
           </div>
         ))}
       </Slider>
