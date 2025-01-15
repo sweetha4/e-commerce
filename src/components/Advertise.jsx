@@ -53,7 +53,7 @@ const Advertisement = () => {
             <p>{ad.description}</p>
             <p className="price">{ad.price}</p>
             {/* Navigating to BuyNowPhonePage and passing the product details */}
-            <Link to={`/buy-phone/${ad.id}`} 
+            <Link to={`/buy-now/${ad.id}`} 
                 state={{ 
                   image: ad.image, 
                   title: ad.title, 
